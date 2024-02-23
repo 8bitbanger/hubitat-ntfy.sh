@@ -1,6 +1,6 @@
 /**
  * Driver:     Ntfy.sh Notification Driver
- * Author:     Jamie Kline
+ * Author:     Jamie Kline (springboarded from sburke781)
  * Repository: https://github.com/8bitbanger/hubitat-ntfy.sh
  * Import URL: https://github.com/8bitbanger/hubitat-ntfy.sh/virt-ntfy.groovy
  * Change Log:
