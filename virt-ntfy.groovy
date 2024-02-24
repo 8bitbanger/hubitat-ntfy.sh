@@ -6,6 +6,7 @@
  * Change Log:
  *
  * 2024.02.23 - Initial Release
+ * 2024.02.24 - Changed default preferences to be web-based ntfy.sh settings, default title.
  */
 
 metadata {
@@ -16,12 +17,13 @@ metadata {
     preferences {
         input name: 'ipAddr',    // ntfy server hostname or address
                 type: 'text',
-                title: 'ntfy IP Address',
+                title: 'ntfy IP Address or hostname (exclude http/https://)',
+                defaultValue: 'ntfy.sh'
                 required: true
         input name: 'port',    
                 type: 'text',
                 title: 'port',
-                defaultValue: '7200'
+                defaultValue: '80'
                 required: true
         input name: 'topic',
                 type: 'text',
@@ -30,14 +32,15 @@ metadata {
         input name: 'title',     // optional title
                 type: 'text',
                 title: 'Notification Title',
+                defaultValue: 'Hubitat'            
                 required: false
         input ("priority", "enum", title: "Message Priority",
-			   defaultValue: "3",
-			   options: [5 : "Max",
-                   4 : "High",
-                   3 : "Default",
-						       2 : "Low", 
-						       1 : "Min"])
+		defaultValue: "3",
+		options: [5 : "Max",
+			  4 : "High",
+			  3 : "Default",
+			  2 : "Low", 
+			  1 : "Min"])
         input name: "logEnable", type: "bool", title: "Enable debug logging", defaultValue: true
         input name: "txtEnable", type: "bool", title: "Enable descriptionText logging", defaultValue: true
    }
