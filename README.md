@@ -1,6 +1,6 @@
 Virtual driver to facilitate sending notifications to locally hosted or public ntfy.sh service. More information at https://ntfy.sh/. No affiliation. 
 
-This driver was written primarily for use with the locally-hosted service however it does appear to work with the public ntfy.sh site (free). I only tested public service *briefly* before commiting. See notes below Re: settings. I have not tested any HTTPS, only HTTP.
+This driver was written primarily for use with the locally-hosted service however it does appear to work with the public ntfy.sh site (free). I only tested public service *briefly* before commiting. See notes below Re: settings. I have not tested any HTTPS, only HTTP. (note that 'HTTP' is hard coded in the driver, if you wish to try it you'll need to change this).
 
 I welcome pull requests - this was my first stab at a Hubitat driver and I only wrote it for personal use. Since I wish even this was available when I went looking initially, against my better judgement I'm posting it. 
 
