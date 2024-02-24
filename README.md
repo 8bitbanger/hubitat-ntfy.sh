@@ -14,4 +14,6 @@ Setup device by specifying path (hostname or IP) to ntfy server, port, and defau
 - To use self hosted nffy, only enter IP address or hostname (no proceeding http/https://) e.g. ntfy.myhouse.local. Match the port to what you're using.
 - To use public nfty service, enter 'ntfy.sh' in address, port 80.
 
-From any app that support notification, simply select the virtual notifier by name chosen above.
+Usage:
+From any Hubitat app that supports notification, simply select the virtual notifier created above. Specify message text.
+Test message can be sent from the driver info page.
